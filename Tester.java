@@ -137,5 +137,10 @@ public class Tester {
 		System.out.print(f0.add(g0)); System.out.println(" ---> " + "47/60");
 		System.out.print(g0.add(h0)); System.out.println(" ---> " + "-79/195");
 		System.out.print(f0.add(h0)); System.out.println(" ---> " + "29/260");
+
+		System.out.println("\nsubtract test cases:");
+		System.out.print(f0.subtract(g0)); System.out.println(" ---> " + "31/60");
+		System.out.print(g0.subtract(h0)); System.out.println(" ---> " + "131/195");
+		System.out.print(f0.subtract(h0)); System.out.println(" ---> " + "309/260");
 	}
 }
