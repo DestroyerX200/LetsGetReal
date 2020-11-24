@@ -108,5 +108,14 @@ public class Tester {
 		System.out.print(d1); System.out.println(" ---> " + "0/1");
 		System.out.print(e0); System.out.println(" ---> " + "1/2");
 		System.out.print(f0); System.out.println(" ---> " + "2/4");
+
+		// System.out.println("\ngcd test cases");
+		// System.out.print(RationalNumber.gcd(45, 9)); System.out.println(" ---> " + "9");
+		// System.out.print(RationalNumber.gcd(1001, 5*7*11)); System.out.println(" ---> " + "77");
+		// System.out.print(RationalNumber.gcd(-5*7*11, 1001)); System.out.println(" ---> " + "77");
+		// System.out.print(RationalNumber.gcd(-60, 150)); System.out.println(" ---> " + "30");
+		// System.out.print(RationalNumber.gcd(135, -90)); System.out.println(" ---> " + "45");
+
+		
 	}
 }
