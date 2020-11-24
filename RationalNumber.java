@@ -27,20 +27,23 @@ public class RationalNumber extends RealNumber {
   *@return the numerator
   */
   public int getNumerator(){
-    return 0;
+    return numerator;
   }
   /**
   *@return the denominator
   */
   public int getDenominator(){
-    return 0;
+    return denominator;
   }
   /**
   *@return a new RationalNumber that has the same numerator
   *and denominator as this RationalNumber but reversed.
   */
   public RationalNumber reciprocal(){
-    return null;
+    int nume = denominator;
+    int deno = numerator;
+    RationalNumber k = new RationalNumber(nume, deno);
+    return k;
   }
   /**
   *@return true when the RationalNumbers have the same numerators and denominators, false otherwise.

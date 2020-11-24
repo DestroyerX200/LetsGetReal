@@ -55,11 +55,38 @@ public class Tester {
 		RationalNumber b0 = new RationalNumber(1, 3);
 		RationalNumber c0 = new RationalNumber(2, 5);
 		RationalNumber d0 = new RationalNumber(7, 0);
+
 		System.out.print(a0.getValue()); System.out.println(" ---> " + "0.5");
 		System.out.print(b0.getValue()); System.out.println(" ---> " + "0.33333...");
 		System.out.print(c0.getValue()); System.out.println(" ---> " + "0.4");
 		System.out.print(d0.getValue()); System.out.println(" ---> " + "0.0");
 
+		System.out.println("\ngetNumerator test cases:");
+		System.out.print(a0.getNumerator()); System.out.println(" ---> " + "1");
+		System.out.print(b0.getNumerator()); System.out.println(" ---> " + "1");
+		System.out.print(c0.getNumerator()); System.out.println(" ---> " + "2");
+		System.out.print(d0.getNumerator()); System.out.println(" ---> " + "0");
 
+		System.out.println("\ngetDenominator test cases:");
+		System.out.print(a0.getDenominator()); System.out.println(" ---> " + "2");
+		System.out.print(b0.getDenominator()); System.out.println(" ---> " + "3");
+		System.out.print(c0.getDenominator()); System.out.println(" ---> " + "5");
+		System.out.print(d0.getDenominator()); System.out.println(" ---> " + "1");
+
+		System.out.println("\nreciprocal test cases:");
+		RationalNumber a1 = a0.reciprocal();
+		RationalNumber b1 = b0.reciprocal();
+		RationalNumber c1 = c0.reciprocal();
+		RationalNumber d1 = d0.reciprocal();
+
+		System.out.print(a1.getNumerator()); System.out.println(" ---> " + "2");
+		System.out.print(b1.getNumerator()); System.out.println(" ---> " + "3");
+		System.out.print(c1.getNumerator()); System.out.println(" ---> " + "5");
+		System.out.print(d1.getNumerator()); System.out.println(" ---> " + "0");
+
+		System.out.print(a1.getDenominator()); System.out.println(" ---> " + "1");
+		System.out.print(b1.getDenominator()); System.out.println(" ---> " + "1");
+		System.out.print(c1.getDenominator()); System.out.println(" ---> " + "2");
+		System.out.print(d1.getDenominator()); System.out.println(" ---> " + "1");
 	}
 }
