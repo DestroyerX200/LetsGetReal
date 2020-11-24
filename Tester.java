@@ -88,5 +88,13 @@ public class Tester {
 		System.out.print(b1.getDenominator()); System.out.println(" ---> " + "1");
 		System.out.print(c1.getDenominator()); System.out.println(" ---> " + "2");
 		System.out.print(d1.getDenominator()); System.out.println(" ---> " + "1");
+
+		System.out.println("\nreciprocal test cases:");
+		RationalNumber e0 = new RationalNumber(1, 2);
+		RationalNumber f0 = new RationalNumber(2, 4);
+		System.out.print(a0.equals(e0)); System.out.println(" ---> " + "true");
+		System.out.print(a0.equals(f0)); System.out.println(" ---> " + "false");
+		System.out.print(e0.equals(a0)); System.out.println(" ---> " + "true");
+		System.out.print(a0.equals(c0)); System.out.println(" ---> " + "false");
 	}
 }
