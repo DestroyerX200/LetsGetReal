@@ -91,9 +91,9 @@ public class Tester {
 
 		System.out.println("\nreciprocal test cases:");
 		RationalNumber e0 = new RationalNumber(1, 2);
-		RationalNumber f0 = new RationalNumber(2, 4);
+		// RationalNumber f0 = new RationalNumber(2, 4);
 		System.out.print(a0.equals(e0)); System.out.println(" ---> " + "true");
-		System.out.print(a0.equals(f0)); System.out.println(" ---> " + "false");
+		// System.out.print(a0.equals(f0)); System.out.println(" ---> " + "false");
 		System.out.print(e0.equals(a0)); System.out.println(" ---> " + "true");
 		System.out.print(a0.equals(c0)); System.out.println(" ---> " + "false");
 
@@ -107,7 +107,7 @@ public class Tester {
 		System.out.print(d0); System.out.println(" ---> " + "0/1");
 		System.out.print(d1); System.out.println(" ---> " + "0/1");
 		System.out.print(e0); System.out.println(" ---> " + "1/2");
-		System.out.print(f0); System.out.println(" ---> " + "2/4");
+		// System.out.print(f0); System.out.println(" ---> " + "2/4");
 
 		// System.out.println("\ngcd test cases");
 		// System.out.print(RationalNumber.gcd(45, 9)); System.out.println(" ---> " + "9");
@@ -116,6 +116,12 @@ public class Tester {
 		// System.out.print(RationalNumber.gcd(-60, 150)); System.out.println(" ---> " + "30");
 		// System.out.print(RationalNumber.gcd(135, -90)); System.out.println(" ---> " + "45");
 
-		
+		RationalNumber f0 = new RationalNumber(130, 200);
+		RationalNumber g0 = new RationalNumber(2*123867123, 15*123867123);
+		RationalNumber h0 = new RationalNumber(7*132131, -13*132131);
+		System.out.print(f0); System.out.println(" ---> " + "13/20");
+		System.out.print(g0); System.out.println(" ---> " + "2/15");
+		System.out.print(h0); System.out.println(" ---> " + "-7/13");
+
 	}
 }

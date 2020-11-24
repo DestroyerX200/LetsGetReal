@@ -9,6 +9,10 @@ public class RationalNumber extends RealNumber {
   */
   public RationalNumber(int nume, int deno){
     super(0.0);//this value is ignored!
+    if (deno < 0) {
+      numerator = -1 * nume;
+      denominator = -1 * deno;
+    }
     if (deno == 0) {
       numerator = 0;
       denominator = 1;
@@ -17,6 +21,7 @@ public class RationalNumber extends RealNumber {
     numerator = nume;
     denominator = deno;
     }
+    reduce();
   }
 
   public double getValue(){
@@ -73,6 +78,9 @@ public class RationalNumber extends RealNumber {
       a = b;
       b = temp;
     }
+    if (b == 0) {
+      return 1;
+    }
     while (a % b != 0) {
       int remainder = a % b;
       a = b;
@@ -87,7 +95,9 @@ public class RationalNumber extends RealNumber {
   *reduced after construction.
   */
   private void reduce(){
-
+    int g = gcd(numerator, denominator);
+    numerator /= g;
+    denominator /= g;
   }
   /******************Operations Return a new RationalNumber!!!!****************/
   /**
