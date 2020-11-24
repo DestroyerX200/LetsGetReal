@@ -15,6 +15,14 @@ public class Tester {
 
 		System.out.println();
 
-		
+		RealNumber e = new RealNumber(2);
+		RealNumber f = new RealNumber(-1);
+		RealNumber g = new RealNumber(5);
+
+		System.out.println(e.add(f)); System.out.println("Should be: " + "1.0");
+		System.out.println(e.add(e)); System.out.println("Should be: " + "4.0");
+		System.out.println(e.add(g)); System.out.println("Should be: " + "7.0");
+		System.out.println(f.add(g)); System.out.println("Should be: " + "4.0");
+
 	}
 }
