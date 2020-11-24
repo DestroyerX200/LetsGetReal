@@ -124,7 +124,10 @@ public class RationalNumber extends RealNumber {
   *Return a new RationalNumber that is the sum of this and the other
   */
   public RationalNumber add(RationalNumber other){
-    return null;
+    int commonDeno = this.denominator * other.denominator;
+    int nume = this.numerator * other.denominator + this.denominator * other.numerator;
+    RationalNumber k = new RationalNumber(nume, commonDeno);
+    return k;   
   }
   /**
   *Return a new RationalNumber that this minus the other

@@ -132,5 +132,10 @@ public class Tester {
 		System.out.print(f0.divide(g0)); System.out.println(" ---> " + "39/8");
 		System.out.print(g0.divide(h0)); System.out.println(" ---> " + "-26/105");
 		System.out.print(f0.divide(h0)); System.out.println(" ---> " + "-169/140");
+
+		System.out.println("\nadd test cases:");
+		System.out.print(f0.add(g0)); System.out.println(" ---> " + "47/60");
+		System.out.print(g0.add(h0)); System.out.println(" ---> " + "-79/195");
+		System.out.print(f0.add(h0)); System.out.println(" ---> " + "29/260");
 	}
 }
