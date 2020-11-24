@@ -40,5 +40,13 @@ public class Tester {
 		System.out.println(f.divide(g)); System.out.println("Should be: " + "-0.2");
 		System.out.println(f.divide(f)); System.out.println("Should be: " + "1.0");
 
+		System.out.println("\nsubtract test cases:");
+
+		System.out.println(e.subtract(f)); System.out.println("Should be: " + "3.0");
+		System.out.println(e.subtract(e)); System.out.println("Should be: " + "0.0");
+		System.out.println(e.subtract(g)); System.out.println("Should be: " + "-3.0");
+		System.out.println(f.subtract(g)); System.out.println("Should be: " + "-6.0");
+		System.out.println(f.subtract(f)); System.out.println("Should be: " + "0.0");
+
 	}
 }
