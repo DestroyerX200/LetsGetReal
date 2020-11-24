@@ -114,7 +114,10 @@ public class RationalNumber extends RealNumber {
   *Return a new RationalNumber that is the this divided by the other
   */
   public RationalNumber divide(RationalNumber other){
-    return null;
+    int nume = this.numerator * other.denominator;
+    int deno = this.denominator * other.numerator;
+    RationalNumber k = new RationalNumber(nume, deno);
+    return k;
   }
 
   /**
