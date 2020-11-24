@@ -96,5 +96,17 @@ public class Tester {
 		System.out.print(a0.equals(f0)); System.out.println(" ---> " + "false");
 		System.out.print(e0.equals(a0)); System.out.println(" ---> " + "true");
 		System.out.print(a0.equals(c0)); System.out.println(" ---> " + "false");
+
+		System.out.println("\nreciprocal test cases:");
+		System.out.print(a0); System.out.println(" ---> " + "1/2");
+		System.out.print(a1); System.out.println(" ---> " + "2/1");
+		System.out.print(b0); System.out.println(" ---> " + "1/3");
+		System.out.print(b1); System.out.println(" ---> " + "3/1");
+		System.out.print(c0); System.out.println(" ---> " + "2/5");
+		System.out.print(c1); System.out.println(" ---> " + "5/2");
+		System.out.print(d0); System.out.println(" ---> " + "0/1");
+		System.out.print(d1); System.out.println(" ---> " + "0/1");
+		System.out.print(e0); System.out.println(" ---> " + "1/2");
+		System.out.print(f0); System.out.println(" ---> " + "2/4");
 	}
 }
