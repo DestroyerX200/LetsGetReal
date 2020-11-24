@@ -10,8 +10,8 @@ public class RationalNumber extends RealNumber {
   public RationalNumber(int nume, int deno){
     super(0.0);//this value is ignored!
     if (deno < 0) {
-      numerator = -1 * nume;
-      denominator = -1 * deno;
+      nume *= -1;
+      deno *= -1;
     }
     if (deno == 0) {
       numerator = 0;
@@ -86,7 +86,7 @@ public class RationalNumber extends RealNumber {
       a = b;
       b = remainder;
     }
-    return b;
+    return Math.abs(b);
   }
 
   /**
@@ -104,7 +104,10 @@ public class RationalNumber extends RealNumber {
   *Return a new RationalNumber that is the product of this and the other
   */
   public RationalNumber multiply(RationalNumber other){
-    return null;
+    int nume = this.numerator * other.numerator;
+    int deno = this.denominator * other.denominator;
+    RationalNumber k = new RationalNumber(nume, deno);
+    return k;
   }
 
   /**

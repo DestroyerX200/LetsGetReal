@@ -123,5 +123,11 @@ public class Tester {
 		System.out.print(g0); System.out.println(" ---> " + "2/15");
 		System.out.print(h0); System.out.println(" ---> " + "-7/13");
 
+
+		System.out.println("\nmultiply test cases:");
+		System.out.print(f0.multiply(g0)); System.out.println(" ---> " + "13/150");
+		System.out.print(g0.multiply(h0)); System.out.println(" ---> " + "-14/195");
+		System.out.print(f0.multiply(h0)); System.out.println(" ---> " + "-7/20");
+
 	}
 }
