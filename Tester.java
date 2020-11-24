@@ -1,5 +1,6 @@
 public class Tester {
 	public static void main(String[] args) {
+		System.out.println("\nRealNumber test cases:");
 		RealNumber a = new RealNumber(0.000000000100001);
 		RealNumber b = new RealNumber(0);
 		RealNumber c = new RealNumber(-0.0000000001);
@@ -47,6 +48,18 @@ public class Tester {
 		System.out.println(e.subtract(g)); System.out.println("Should be: " + "-3.0");
 		System.out.println(f.subtract(g)); System.out.println("Should be: " + "-6.0");
 		System.out.println(f.subtract(f)); System.out.println("Should be: " + "0.0");
+
+		System.out.println("\nRationalNumber test cases:");
+
+		RationalNumber a0 = new RationalNumber(1, 2);
+		RationalNumber b0 = new RationalNumber(1, 3);
+		RationalNumber c0 = new RationalNumber(2, 5);
+		RationalNumber d0 = new RationalNumber(7, 0);
+		System.out.print(a0.getValue()); System.out.println(" ---> " + "0.5");
+		System.out.print(b0.getValue()); System.out.println(" ---> " + "0.33333...");
+		System.out.print(c0.getValue()); System.out.println(" ---> " + "0.4");
+		System.out.print(d0.getValue()); System.out.println(" ---> " + "0.0");
+
 
 	}
 }
