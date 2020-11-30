@@ -16,7 +16,15 @@ public abstract class Number {
   *Special case: if one is exactly zero, the other must be exactly zero.
   */
   public boolean equals(Number other) {
-    //TO BE IMPLEMENTED
-    return false;  
+    if (this.getValue() == 0 || other.getValue() == 0) {
+      if (this.getValue() == other.getValue()) {
+        return true;
+      }
+      return false;
+    }
+    if (Math.abs( (this.getValue() - other.getValue()) / this.getValue()) <= 0.00001 ) {
+      return true;
+    }
+    return false;
   }
 }

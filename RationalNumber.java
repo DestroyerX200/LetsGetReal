@@ -51,14 +51,6 @@ public class RationalNumber extends Number {
     return k;
   }
   /**
-  *@return true when the RationalNumbers have the same numerators and denominators, false otherwise.
-  */
-  public boolean equals(RationalNumber other){
-    return (numerator == other.numerator && denominator == other.denominator);
-  }
-
-
-  /**
   *@return the value expressed as "3/4" or "8/3"
   */
   public String toString(){
