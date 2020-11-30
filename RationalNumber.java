@@ -50,6 +50,9 @@ public class RationalNumber extends Number {
     RationalNumber k = new RationalNumber(nume, deno);
     return k;
   }
+  public boolean equals(RationalNumber other){
+    return (numerator == other.numerator && denominator == other.denominator);
+  }
   /**
   *@return the value expressed as "3/4" or "8/3"
   */
